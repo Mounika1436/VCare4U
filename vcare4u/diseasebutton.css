@@ -1,0 +1,138 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container for the disorders */
+.disorder-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Styling for each disorder item */
+.disorder-item {
+    width: 48%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Box for the disease name button */
+.disorder-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.disorder-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Large attractive font for disease names */
+.disorder-button {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Content section for each disease */
+.disorder-content {
+    display: none;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.disorder-description {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggle button for symptoms */
+.btn-toggle {
+    display: inline-block;
+    background-color: #ffa500;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-toggle:hover {
+    background-color: #e59400;
+}
+
+/* Styling for the list of symptoms */
+.disorder-symptoms {
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style-type: none;
+    display: none;
+}
+
+.disorder-symptoms li {
+    padding: 8px;
+    background-color: #e9ecef;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.disorder-symptoms li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Left-aligned disorder items */
+.left {
+    text-align: left;
+}
+
+/* Right-aligned disorder items */
+.right {
+    text-align: right;
+}
+
+/* Media query for responsiveness (Mobile and smaller devices) */
+@media screen and (max-width: 768px) {
+    .disorder-item {
+        width: 100%;
+    }
+
+    .disorder-button {
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    .disorder-description {
+        padding: 10px;
+    }
+
+    .btn-toggle {
+        padding: 8px;
+    }
+
+    .disorder-symptoms li {
+        padding: 6px;
+    }
+}
+

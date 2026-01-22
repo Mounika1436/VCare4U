@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mental Health Awareness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Added Pacifico for VCare4U -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+        /* Global Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f8fb;
+            color: #444;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background: #00796b; /* Lighter shade for header */
+            color: #e0f2f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        header .logo {
+            height: 120px; /* Increased size of the logo */
+            width: 120px;  /* Increased size of the logo */
+            border-radius: 15px; /* Designer frame */
+            border: 5px solid #ffffff; /* White border for the logo */
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for a more professional look */
+        }
+
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            font-weight: 400;
+            margin-left: 15px;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: #e0f2f1;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #80cbc4;
+        }
+
+        /* Google Translate Button */
+        #google_translate_element {
+            float: right;
+            margin-top: 10px;
+        }
+
+        /* Main Section */
+        main {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+        }
+
+        .section-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .section-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .team-member p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Social Media Links */
+        #social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #social-media a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .social-logo {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-logo:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer Section */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .section-box {
+                padding: 15px;
+            }
+
+            .team-member {
+                width: 180px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="VCare4U" class="logo">
+        <h1>VCare4U</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/diseases.html">Mental Health Diseases</a>
+            <a href="/test.html">Self Assessment</a>
+            <a href="/remedies.html">Remedies</a>
+            <a href="/emergency.html">Emergency Contacts</a>
+            <a href="/feedback.html">Feedback</a>
+            <a href="/about.html">About Us</a>
+        </nav>
+        <div id="google_translate_element"></div>
+    </header>
+
+    <main>
+        <section id="mission" class="section-box">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to promote mental health awareness and support by providing accessible information on mental health conditions, effective remedies, and crucial emergency contacts. We aim to empower individuals with the knowledge and resources they need to understand mental health issues, reduce stigma, and encourage seeking help. Through multilingual content and community engagement, we strive to create a supportive environment for those affected by mental health challenges.
+            </p>
+        </section>
+
+        <section id="vision" class="section-box">
+            <h2>Our Vision</h2>
+            <p>
+                We envision a world where mental health is prioritized, understood, and openly discussed, leading to a society free from stigma and discrimination. Our goal is to be a leading resource for mental health information and support, fostering a culture of empathy, resilience, and proactive mental wellness. By connecting individuals with the necessary resources and encouraging open dialogue, we aspire to create a community where everyone feels valued, supported, and empowered to seek help.
+            </p>
+        </section>
+
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <h3>Mohd Sabhgath Khan</h3>
+                <p>Senior Developer</p>
+            </div>
+            <div class="team-member">
+                <h3>M.Sai Ram</h3>
+                <p>Student</p>
+            </div>
+            <div class="team-member">
+                <h3>D.Sai Charan</h3>
+                <p>Student</p>
+            </div>
+            <div class="team-member">
+                <h3>B.Varshini</h3>
+                <p>Student</p>
+            </div>
+            <div class="team-member">
+                <h3>N.Mounika</h3>
+                <p>Student</p>
+            </div>
+            <div class="team-member">
+                <h3>D.Nagaraju</h3>
+                <p>Student</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to reach out:</p>
+            <ul>
+                <li>Email: sipteam3@mentalhealthawareness.org</li>
+                <li>Phone: 112233445566</li>
+            </ul>
+        </section>
+
+        <section id="social-media">
+            <h2>Connect with Us</h2>
+            <a href="https://www.facebook.com/groups/mhawarenessandsupport/?ref=share&mibextid=NSMWBT" target="_blank">
+                <img src="fb1.png" alt="Facebook" class="social-logo">
+            </a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2FMentalHealthGov" target="_blank">
+                <img src="x1.png" alt="Twitter" class="social-logo">
+            </a>
+            <a href="https://www.instagram.com/mental.health_awarenes/?igsh=MWU1aG9na3BteGNqeg%3D%3D" target="_blank">
+                <img src="instagram1.jpeg" alt="Instagram" class="social-logo">
+            </a>
+            <a href="https://www.linkedin.com/newsletters/mental-health-awareness-7087788902408687616" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn" class="social-logo">
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mental Health Awareness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

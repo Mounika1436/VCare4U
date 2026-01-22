@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #e0f2e9; /* Light green background */
+    color: #333; /* Default text color */
+}
+
+header {
+    background-color: #e0f2e9; /* Header background color */
+    color: black; /* Text color for header */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding */
+}
+
+.logo {
+    height: 70px; /* Logo height */
+    width: 70px; /* Logo width */
+    border-radius: 50%; /* Circular logo */
+    object-fit: cover; /* Ensure image fits well in the circle */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for the header */
+}
+
+nav {
+    margin-left: auto; /* Align nav to the right */
+}
+
+nav a {
+    color: black; /* Link color */
+    margin: 0 10px; /* Space between nav links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    padding: 20px; /* Padding for the main content */
+}
+
+h2 {
+    margin: 20px 0 10px; /* Margin for headings */
+}
+
+ul {
+    margin: 10px 0; /* Margin for unordered lists */
+}
+
+blockquote {
+    background-color: #fff; /* Background for quotes */
+    border-left: 5px solid #007BFF; /* Left border for quotes */
+    margin: 10px 0; /* Margin for blockquotes */
+    padding: 10px 15px; /* Padding for blockquotes */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px; /* Padding for footer */
+    background-color: #f1f1f1; /* Footer background color */
+    position: relative; /* Position footer */
+    bottom: 0; /* Align footer to bottom */
+    width: 100%; /* Full width for footer */
+}
+
+/* Add more styles as needed for other sections */

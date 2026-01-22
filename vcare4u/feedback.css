@@ -1,0 +1,99 @@
+/* Styling the Feedback Form */
+main {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Label Styling */
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #00796b;
+}
+
+/* Input and Textarea Styling */
+input, textarea {
+    padding: 12px;
+    border: 2px solid #00796b;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Textarea Specific Styling */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Submit Button Styling */
+button[type="submit"] {
+    padding: 12px 30px;
+    background-color: #00796b;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #4caf50;
+}
+
+button[type="submit"]:active {
+    background-color: #388e3c;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    main {
+        padding: 40px 20px;
+    }
+
+    main h2 {
+        font-size: 28px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 10px 25px;
+    }
+}

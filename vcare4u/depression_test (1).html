@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test - VCare4U</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+        /* Global Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f8fb;
+            color: #444;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background: #00796b; /* Lighter shade for header */
+            color: #e0f2f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        header .logo {
+            height: 120px; /* Increased size of the logo */
+            width: 120px;  /* Increased size of the logo */
+            border-radius: 15px; /* Designer frame */
+            border: 5px solid #ffffff; /* White border for the logo */
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for a more professional look */
+        }
+
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            font-weight: 400;
+            margin-left: 15px;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: #e0f2f1;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #80cbc4;
+        }
+
+        /* Test Section */
+        .test-section {
+            background-color: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .test-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            color: #00796b;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .question label {
+            font-size: 18px;
+            color: #444;
+        }
+
+        /* Adjust question options to be vertical and centered */
+        .question-options {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .question-options input {
+            margin: 5px 0;
+        }
+
+        .btn {
+            background-color: #80cbc4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #4caf50;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .meter {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            border-radius: 100px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        .fill {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            transition: width 0.3s;
+        }
+
+        .percentage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Center the "Seek Professional Help" button */
+        #emergencyButton {
+            background-color: darkred;
+            display: none;
+            margin: 20px auto;
+            width: auto;
+            padding: 15px 30px;
+            text-align: center;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #backToTestButton {
+            background-color: #4caf50;
+            display: block;
+            margin-top: 20px;
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .test-section {
+                padding: 30px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="VCare4U" class="logo">
+        <h1>VCare4U</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/diseases.html">Mental Health Diseases</a>
+            <a href="/tests.html">Self Assesment</a>
+            <a href="/remedies.html">Remedies</a>
+            <a href="/emergency.html">Emergency Contacts</a>
+            <a href="/feedback.html">Feedback</a>
+            <a href="/about.html">About Us</a>
+        </nav>
+        <div id="google_translate_element"></div>
+    </header>
+
+    <main>
+        <section class="test-section">
+            <h2>Assess Your Depression Risk</h2>
+            <form id="adhdTestForm" onsubmit="calculateADHDScore(event)">
+                <p>Rate the following statements:</p>
+                <div class="question">
+                    <label>1.How often do you feel little interest or pleasure in doing things you usually enjoy? </label><br>
+                    <div class="question-options">
+                        <input type="radio" name="adhdQ1" value="0" required> Never<br>
+                        <input type="radio" name="adhdQ1" value="1"> Sometimes<br>
+                        <input type="radio" name="adhdQ1" value="2"> Often<br>
+                        <input type="radio" name="adhdQ1" value="3"> Always
+                    </div>
+                </div>
+                <div class="question">
+                    <label>2. Do you often feel sad, hopeless, or down for most of the day?</label><br>
+                    <div class="question-options">
+                        <input type="radio" name="adhdQ2" value="0" required> Never<br>
+                        <input type="radio" name="adhdQ2" value="1"> Sometimes<br>
+                        <input type="radio" name="adhdQ2" value="2"> Often<br>
+                        <input type="radio" name="adhdQ2" value="3"> Always
+                    </div>
+                </div>
+                <div class="question">
+                    <label>3. Have you noticed changes in your appetite or weight, such as eating much more or much less than usual?</label><br>
+                    <div class="question-options">
+                        <input type="radio" name="adhdQ3" value="0" required> Never<br>
+                        <input type="radio" name="adhdQ3" value="1"> Sometimes<br>
+                        <input type="radio" name="adhdQ3" value="2"> Often<br>
+                        <input type="radio" name="adhdQ3" value="3"> Always
+                    </div>
+                </div>
+                <div class="question">
+                    <label>4. Do you frequently feel tired or have little energy, even after rest?</label><br>
+                    <div class="question-options">
+                        <input type="radio" name="adhdQ4" value="0" required> Never<br>
+                        <input type="radio" name="adhdQ4" value="1"> Sometimes<br>
+                        <input type="radio" name="adhdQ4" value="2"> Often<br>
+                        <input type="radio" name="adhdQ4" value="3"> Always
+                    </div>
+                </div>
+                <div class="question">
+                    <label>5. Do you have trouble concentrating, making decisions, or remembering things?</label><br>
+                    <div class="question-options">
+                        <input type="radio" name="adhdQ5" value="0" required> Never<br>
+                        <input type="radio" name="adhdQ5" value="1"> Sometimes<br>
+                        <input type="radio" name="adhdQ5" value="2"> Often<br>
+                        <input type="radio" name="adhdQ5" value="3"> Always
+                    </div>
+                </div>
+                <button type="submit" class="btn">Submit Test</button>
+            </form>
+
+            <div class="result">
+                <p id="adhdResult"></p>
+            </div>
+
+            <div class="meter" id="adhdMeter">
+                <div class="fill" id="adhdFill"></div>
+                <div class="percentage" id="adhdPercentage"></div>
+            </div>
+
+            <button id="emergencyButton" onclick="window.location.href='/emergency.html'">Seek Professional Help</button>
+            <button id="backToTestButton" onclick="window.location.href='/tests.html'">Back to Tests</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 VCare4U. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function calculateADHDScore(event) {
+            event.preventDefault();
+            let score = 0;
+            const form = document.getElementById('adhdTestForm');
+            const selections = form.querySelectorAll('input[type="radio"]:checked');
+            selections.forEach(radio => {
+                score += parseInt(radio.value);
+            });
+
+            let result;
+            let meterWidth;
+            let percentage;
+
+            const neverAnswers = document.querySelectorAll('input[type="radio"]:checked[value="0"]').length;
+            if (neverAnswers === 5 || neverAnswers === 2) {
+                result = 'You don’t have any mental health issues. You are well. 😊';
+                meterWidth = '0%';
+                percentage = '0%';
+                document.getElementById('adhdFill').style.backgroundColor = 'green';
+                document.getElementById('adhdMeter').style.display = 'none';
+                document.getElementById('emergencyButton').style.display = 'none';
+            } else {
+                if (score <= 4) {
+                    result = 'Your risk for Depression is Mild. 😐';
+                    meterWidth = '25%';
+                    percentage = '25%';
+                    document.getElementById('adhdFill').style.backgroundColor = 'green';
+                } else if (score <= 9) {
+                    result = 'Your risk for Depression is Average. 😕';
+                    meterWidth = '50%';
+                    percentage = '50%';
+                    document.getElementById('adhdFill').style.backgroundColor = 'orange';
+                } else {
+                    result = 'Emergency! Seek professional help. 😱';
+                    meterWidth = '100%';
+                    percentage = '100%';
+                    document.getElementById('adhdFill').style.backgroundColor = 'darkred';
+                    document.getElementById('emergencyButton').style.display = 'block';
+                    document.getElementById('emergencyButton').style.margin = '20px auto';
+                }
+                document.getElementById('adhdMeter').style.display = 'block';
+            }
+
+            document.getElementById('adhdResult').innerText = result;
+            document.getElementById('adhdFill').style.width = meterWidth;
+            document.getElementById('adhdPercentage').innerText = percentage;
+        }
+    </script>
+</body>
+</html>

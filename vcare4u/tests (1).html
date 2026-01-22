@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental Health Awareness</title>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<style>
+/* Global Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f8fb;
+    color: #444;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background: #00796b;
+    color: #e0f2f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+}
+header .logo {
+    height: 120px;
+    width: 120px;
+    border-radius: 15px;
+    border: 5px solid #ffffff;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+header h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    color: #ffffff;
+    flex-grow: 1;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between; /* Distributes space between links */
+    gap: 20px; /* Adds spacing between links */
+}
+nav a {
+    font-weight: 500;
+    color: #e0f2f1;
+    font-size: 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #80cbc4;
+}
+ 
+#google_translate_element {
+    float: right;
+    margin-top: 10px;
+}
+main {
+    flex: 1; /* Ensures the main content fills the space above the footer */
+}
+.disease-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+    align-items: center;
+}
+.disease-btn {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 250px;
+}
+.disease-btn:hover {
+    background-color: #80cbc4;
+}
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+    <img src="logo.jpg" alt="VCare4U" class="logo">
+    <h1>VCare4U</h1>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/diseases.html">Mental Health Diseases</a>
+        <a href="/tests.html">Self Assessment</a>
+        <a href="/remedies.html">Remedies</a>
+        <a href="/emergency.html">Emergency Contacts</a>
+        <a href="/feedback.html">Feedback</a>
+        <a href="/about.html">About Us</a>
+    </nav>
+    <div id="google_translate_element"></div>
+</header>
+<main>
+    <div style="background-color: #fffbcc; padding: 10px; border: 1px solid #f7e98d; font-family: Arial, sans-serif; text-align: center; font-size: 14px;">
+        <strong style="color: darkred;">Disclaimer:</strong> Even after taking the test, consulting a qualified professional doctor is mandatory to get diagnosed 100% and start treatment.
+    </div>
+    
+<section class="disease-grid">
+    <h2>Take a Self-Assessment Test</h2>
+    <a href="/depression_test.html" target="_blank" class="disease-btn">Depression Test</a>
+    <a href="/anxiety_test.html" target="_blank" class="disease-btn">Anxiety Test</a>
+    <a href="/phobia_test.html" target="_blank" class="disease-btn">Phobia Test</a>
+    <a href="/schizophrenia_test.html" target="_blank" class="disease-btn">Schizophrenia Test</a>
+    <a href="/bipolar_test.html" target="_blank" class="disease-btn">Bipolar Test</a>
+    <a href="/dementia_test.html" target="_blank" class="disease-btn">Dementia Test</a>
+    <a href="/eating_test.html" target="_blank" class="disease-btn">Eating Disorder Test</a>
+    <a href="/learning_test.html" target="_blank" class="disease-btn">Learning Disorder Test</a>
+    <a href="/ocd_test.html" target="_blank" class="disease-btn">OCD Test</a>
+    <a href="/adhd_test.html" target="_blank" class="disease-btn">ADHD Test</a>
+    <a href="/autistic_test.html" target="_blank" class="disease-btn">Autism Test</a>
+    <a href="/dissociative_test.html" target="_blank" class="disease-btn">DID Test</a>
+</section>
+</main>
+<footer>
+    <p>&copy; 2024 VCare4U. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

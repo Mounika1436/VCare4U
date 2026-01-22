@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- Added Pacifico for VCare4U -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+        /* Global Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f8fb;
+            color: #444;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background: #00796b; /* Lighter shade for header */
+            color: #e0f2f1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        header .logo {
+            height: 120px; /* Increased size of the logo */
+            width: 120px;  /* Increased size of the logo */
+            border-radius: 15px; /* Designer frame */
+            border: 5px solid #ffffff; /* White border for the logo */
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for a more professional look */
+        }
+
+
+        header h1 {
+            font-family: 'Pacifico', cursive; /* Added a new font for VCare4U */
+            font-size: 36px;
+            font-weight: 400;
+            margin-left: 15px;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: #e0f2f1;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #80cbc4;
+        }
+
+        /* Google Translate Button */
+        #google_translate_element {
+            float: right;
+            margin-top: 10px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('file (1).jpg') no-repeat center center/cover;
+            padding: 80px 20px;
+            color: white;
+            text-align: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(0, 77, 64, 0.7); /* Dark overlay for text contrast */
+        }
+
+        .hero h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #e0f2f1;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .hero .btn {
+            padding: 10px 20px;
+            background-color: #80cbc4;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .hero .btn:hover {
+            background-color: #4caf50;
+        }
+
+        /* Info Section */
+        .info {
+            padding: 60px 40px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #00796b;
+        }
+
+        .info p {
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #555;
+        }
+
+        .info ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .info ul li {
+            font-size: 18px;
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            color: #444;
+        }
+
+        .info ul li::before {
+            content: '•';
+            color: #00796b;
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .info img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            margin-top: 30px;
+        }
+
+        /* Quotes Section */
+        .quotes {
+            background: #e0f2f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .quotes h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #00796b;
+        }
+
+        .quotes blockquote {
+            font-size: 24px;
+            font-style: italic;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-left: 5px solid #00796b;
+            border-radius: 10px;
+            color: #444;
+        }
+
+        .quotes blockquote footer {
+            font-size: 18px;
+            color: #00796b;
+            margin-top: 10px;
+            background-color: #f4f8fb; /* Lighter background for author name */
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+
+        /* Call-to-Action Section */
+        .call-to-action {
+            background: #f3f4f6;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .call-to-action h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: #00796b;
+        }
+
+        .call-to-action p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        /* Footer Section */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .info ul li {
+                font-size: 16px;
+            }
+
+            .call-to-action p {
+                font-size: 16px;
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+        }
+        body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light grey background */
+    color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light grey background */
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Proper grid layout */
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px; /* Prevent it from stretching too wide */
+    margin: auto;
+}
+
+.disorder-box {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Aligning content vertically */
+    align-items: center; /* Center-align content */
+}
+
+.disorder-box:hover {
+    transform: translateY(-8px); /* More pronounced hover effect */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.disorder-box h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #333;
+}
+
+.disorder-content {
+    display: none; /* Initially hide content */
+    margin-top: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.disorder-content img {
+    width: 100%;
+    max-height: 200px; /* Fixed image size */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    align-self: center; /* Center the image */
+}
+
+.btn-toggle {
+    background-color: #4CAF50; /* Light green button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btn-toggle:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.disorder-symptoms {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.disorder-symptoms li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .disorder-box h3 {
+        font-size: 18px;
+    }
+    
+    .btn-toggle {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="VCare4U" class="logo">
+        <h1>VCare4U</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/diseases.html">Mental Health Diseases</a>
+            <a href="/tests.html">Self Assesment</a>
+            <a href="/remedies.html">Remedies</a>
+            <a href="/emergency.html">Emergency Contacts</a>
+            <a href="/feedback.html">Feedback</a>
+            <a href="/about.html">About Us</a>
+        </nav>
+        <!-- Google Translate Button -->
+        <div id="google_translate_element"></div>
+    </header>
+    <main>
+        <div style="background-color: #fffbcc; padding: 10px; border: 1px solid #f7e98d; font-family: Arial, sans-serif; text-align: center; font-size: 14px;">
+            <strong style="color: darkred;">Disclaimer:</strong> The symptoms mentioned should persist for at least 2 weeks.
+        </div>
+        <h2>Common Mental Health Disorders</h2>
+        <p>Mental health disorders are common, affecting many individuals worldwide. Understanding these conditions is vital for proper treatment and support. Here are some common disorders:</p>
+
+        <div class="container">
+            <!-- Repeat this structure for each disorder -->
+            <div class="disorder-box" onclick="toggleContent('depression')">
+                <h3>Depression</h3>
+                <div id="depression" class="disorder-content" style="display:none;">
+                    <img src="depression.jpg" alt="Depression">
+                    <p>Depression is a serious mood disorder causing symptoms that affect how a person feels, thinks, and handles daily activities.</p>
+                    <button class="btn-toggle" onclick="toggleSymptoms(event, 'depression-symptoms')">Show Symptoms</button>
+                    <ul id="depression-symptoms" class="disorder-symptoms" style="display:none;">
+                        <li>Persistent sadness or low mood</li>
+                        <li>Loss of interest or pleasure in activities</li>
+                        <li>Changes in appetite or weight</li>
+                        <li>Sleep disturbances (insomnia or oversleeping)</li>
+                        <li>Fatigue or loss of energy</li>
+                        <li>Feelings of worthlessness or excessive guilt</li>
+                        <li>Difficulties concentrating or making decisions</li>
+                        <li>Restlessness or slowed movements</li>
+                        <li>Thoughts of death or suicide</li>
+                        <li>Physical symptoms without a clear cause</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Add similar blocks for other disorders -->
+            <div class="disorder-box" onclick="toggleContent('anxiety')">
+                <h3>Anxiety Disorders</h3>
+                <div id="anxiety" class="disorder-content" style="display:none;">
+                    <img src="anxiety.jpg" alt="Anxiety Disorders">
+                    <p>Anxiety is a feeling of worry or fear. It’s natural, but excessive anxiety can interfere with daily life.</p>
+                    <button class="btn-toggle" onclick="toggleSymptoms(event, 'anxiety-symptoms')">Show Symptoms</button>
+                    <ul id="anxiety-symptoms" class="disorder-symptoms" style="display:none;">
+                        <li>Excessive worry or anxiety about various aspects of life</li>
+                        <li>Restlessness or feeling on edge</li>
+                        <li>Fatigue or difficulty concentrating</li>
+                        <li>Irritability</li>
+                        <li>Muscle tension</li>
+                        <li>Sleep disturbances (difficulty falling or staying asleep)</li>
+                        <li>Rapid heartbeat or palpitations</li>
+                        <li>Shortness of breath or feeling smothered</li>
+                        <li>Feeling dizzy, lightheaded, or faint</li>
+                        <li>Avoidance of certain situations or places</li>
+                    </ul>
+                </div>
+            </div>
+            
+
+            <div class="disorder-box" onclick="toggleContent('eating-disorder')">
+                <h3>Eating Disorder</h3>
+                <div id="eating-disorder" class="disorder-content" style="display:none;">
+                    <img src="Eating Disorder.jpg" alt="Eating Disorder">
+                    <p>An eating disorder is a mental health condition that affects eating behaviors and can result in serious health problems.</p>
+                    <button class="btn-toggle" onclick="toggleSymptoms(event, 'eating-disorder-symptoms')">Show Symptoms</button>
+                    <ul id="eating-disorder-symptoms" class="disorder-symptoms" style="display:none;">
+                        <li>Severe restriction of food intake</li>
+                        <li>Excessive preoccupation with weight or body shape</li>
+                        <li>Binge eating or purging behaviors</li>
+                        <li>Extreme fear of gaining weight</li>
+                        <li>Constant dieting or avoidance of certain foods</li>
+                        <li>Loss of interest in eating or extreme hunger</li>
+                        <li>Excessive exercise</li>
+                        <li>Distorted body image</li>
+                        <li>Fatigue, dizziness, or fainting</li>
+                        <li>Health complications like digestive issues or irregular heart rate</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="disorder-box" onclick="toggleContent('ocd')">
+                <h3>Obsessive-Compulsive Disorder (OCD)</h3>
+                <div id="ocd" class="disorder-content" style="display:none;">
+                    <img src="OCD.jpg" alt="Obsessive-Compulsive Disorder">
+                    <p>Obsessive-Compulsive Disorder (OCD) is a mental health condition where a person experiences persistent, unwanted thoughts (obsessions) and engages in repetitive behaviors (compulsions) to alleviate anxiety.</p>
+                    <button class="btn-toggle" onclick="toggleSymptoms(event, 'ocd-symptoms')">Show Symptoms</button>
+                    <ul id="ocd-symptoms" class="disorder-symptoms" style="display:none;">
+                        <li>Recurrent, intrusive, or unwanted thoughts (obsessions)</li>
+                        <li>Repetitive behaviors or mental acts (compulsions)</li>
+                        <li>Compulsions performed to reduce anxiety (e.g., washing hands, checking locks)</li>
+                        <li>Excessive concern with cleanliness or symmetry</li>
+                        <li>Fear of contamination or harm</li>
+                        <li>Difficulty controlling or stopping compulsive behaviors</li>
+                        <li>Spending a significant amount of time on compulsions</li>
+                        <li>Interference with daily life or relationships</li>
+                        <li>Distress caused by obsessions or compulsions</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Phobia -->
+<div class="disorder-box" onclick="toggleContent('phobia')">
+    <h3>Phobia</h3>
+    <div id="phobia" class="disorder-content" style="display:none;">
+        <img src="Phobia.jpg" alt="Phobia">
+        <p>Phobia is an intense, irrational fear of a specific object, situation, or activity that poses little or no actual danger.</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'phobia-symptoms')">Show Symptoms</button>
+        <ul id="phobia-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Intense fear or anxiety triggered by a specific object or situation</li>
+            <li>Rapid heartbeat, sweating, and shortness of breath when exposed to the feared object</li>
+            <li>Avoidance of situations where the feared object might be present</li>
+            <li>Difficulty functioning in daily life due to fear</li>
+            <li>Feeling overwhelmed or powerless in the presence of the phobic stimulus</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Schizophrenia -->
+<div class="disorder-box" onclick="toggleContent('schizophrenia')">
+    <h3>Schizophrenia</h3>
+    <div id="schizophrenia" class="disorder-content" style="display:none;">
+        <img src="Schizophrenia.jpg" alt="Schizophrenia">
+        <p>Schizophrenia is a chronic brain disorder that affects a person’s thoughts, emotions, and behavior, often causing them to lose touch with reality.</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'schizophrenia-symptoms')">Show Symptoms</button>
+        <ul id="schizophrenia-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Hallucinations (hearing voices, seeing things that aren't there)</li>
+            <li>Delusions (false beliefs, such as believing one is being persecuted)</li>
+            <li>Disorganized speech and thinking</li>
+            <li>Severe mood swings</li>
+            <li>Lack of motivation or emotional expression</li>
+            <li>Withdrawal from social interactions</li>
+            <li>Difficulty with daily tasks or maintaining personal hygiene</li>
+        </ul>
+    </div>
+</div>
+
+<!-- ADHD -->
+<div class="disorder-box" onclick="toggleContent('adhd')">
+    <h3>Attention-Deficit/Hyperactivity Disorder (ADHD)</h3>
+    <div id="adhd" class="disorder-content" style="display:none;">
+        <img src="ADHD.jpg" alt="ADHD">
+        <p>ADHD is a neurodevelopmental disorder characterized by persistent inattention, hyperactivity, and impulsivity.</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'adhd-symptoms')">Show Symptoms</button>
+        <ul id="adhd-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Inattention (e.g., difficulty focusing, forgetfulness)</li>
+            <li>Impulsivity (e.g., difficulty waiting, interrupting others)</li>
+            <li>Hyperactivity (e.g., fidgeting, inability to stay seated)</li>
+            <li>Difficulty completing tasks or following instructions</li>
+            <li>Frequent mood swings or frustration</li>
+            <li>Disorganization in daily activities</li>
+            <li>Difficulty with time management</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Bipolar Disorder -->
+<div class="disorder-box" onclick="toggleContent('bipolar')">
+    <h3>Bipolar Disorder</h3>
+    <div id="bipolar" class="disorder-content" style="display:none;">
+        <img src="Bipolar Disorder.jpg" alt="Bipolar Disorder">
+        <p>Bipolar disorder causes extreme mood swings that include emotional highs (mania or hypomania) and lows (depression).</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'bipolar-symptoms')">Show Symptoms</button>
+        <ul id="bipolar-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Extreme mood swings between mania and depression</li>
+            <li>Increased energy, activity, and impulsivity during manic episodes</li>
+            <li>Feelings of sadness, hopelessness, or worthlessness during depressive episodes</li>
+            <li>Difficulty maintaining relationships or employment</li>
+            <li>Changes in sleep patterns</li>
+            <li>Risky behavior during manic phases (e.g., spending sprees, substance abuse)</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Dementia -->
+<div class="disorder-box" onclick="toggleContent('dementia')">
+    <h3>Dementia</h3>
+    <div id="dementia" class="disorder-content" style="display:none;">
+        <img src="Dementia.jpg" alt="Dementia">
+        <p>Dementia is a general term for a decline in cognitive ability, affecting memory, thinking, and behavior to the extent that it interferes with daily life.</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'dementia-symptoms')">Show Symptoms</button>
+        <ul id="dementia-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Memory loss and forgetfulness</li>
+            <li>Difficulty with communication and finding words</li>
+            <li>Confusion and disorientation</li>
+            <li>Difficulty with planning or organizing tasks</li>
+            <li>Changes in mood and behavior</li>
+            <li>Withdrawal from social activities</li>
+            <li>Difficulty performing everyday tasks</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Learning Disorder -->
+<div class="disorder-box" onclick="toggleContent('learning-disorder')">
+    <h3>Learning Disorder</h3>
+    <div id="learning-disorder" class="disorder-content" style="display:none;">
+        <img src="Learning Disorder.jpg" alt="Learning Disorder">
+        <p>Learning disorders involve difficulties in reading, writing, or math, despite having average or above-average intelligence.</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'learning-disorder-symptoms')">Show Symptoms</button>
+        <ul id="learning-disorder-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Difficulty understanding or applying mathematical concepts</li>
+            <li>Struggles with reading fluency and comprehension</li>
+            <li>Challenges with spelling and writing</li>
+            <li>Poor organizational skills</li>
+            <li>Difficulty following multi-step instructions</li>
+            <li>Delayed speech or language development</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Dissociative Identity Disorder -->
+<div class="disorder-box" onclick="toggleContent('dissociative-identity')">
+    <h3>Dissociative Identity Disorder (DID)</h3>
+    <div id="dissociative-identity" class="disorder-content" style="display:none;">
+        <img src="Dissociative Identity Disorder.jpg" alt="Dissociative Identity Disorder">
+        <p>Dissociative Identity Disorder involves the presence of two or more distinct personality states or identities, often triggered by trauma.</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'dissociative-identity-symptoms')">Show Symptoms</button>
+        <ul id="dissociative-identity-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Presence of multiple identities with distinct behaviors, memories, and attitudes</li>
+            <li>Memory gaps or lost time</li>
+            <li>Confusion about personal identity</li>
+            <li>Feeling detached from oneself or one's surroundings</li>
+            <li>Frequent mood swings</li>
+            <li>Flashbacks or re-experiencing traumatic events</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Autistic Disorder -->
+<div class="disorder-box" onclick="toggleContent('autistic-disorder')">
+    <h3>Autistic Disorder</h3>
+    <div id="autistic-disorder" class="disorder-content" style="display:none;">
+        <img src="Autism.jpg" alt="Autistic Disorder">
+        <p>Autistic disorder, also known as Autism Spectrum Disorder (ASD), is a developmental disorder that affects communication, behavior, and social interactions.</p>
+        <button class="btn-toggle" onclick="toggleSymptoms(event, 'autistic-disorder-symptoms')">Show Symptoms</button>
+        <ul id="autistic-disorder-symptoms" class="disorder-symptoms" style="display:none;">
+            <li>Difficulty with communication (verbal and non-verbal)</li>
+            <li>Difficulty understanding social cues or forming relationships</li>
+            <li>Repetitive behaviors or routines</li>
+            <li>Highly focused interests or activities</li>
+            <li>Sensitivity to sensory stimuli (e.g., light, sound)</li>
+            <li>Challenges with motor coordination</li>
+        </ul>
+    </div>
+</div>
+
+        </div>
+
+            
+        <script>
+
+function toggleContent(diseaseId) {
+    var content = document.getElementById(diseaseId);
+    
+    // Get all the other disease content elements
+    var allContents = document.querySelectorAll('.disorder-content');
+
+    // Loop through each content and hide them if they are not the clicked one
+    allContents.forEach(function (item) {
+        if (item !== content) {
+            item.style.display = 'none'; // Close other disease tabs
+        }
+    });
+
+    // Toggle the clicked disease content
+    if (content.style.display === 'block') {
+        content.style.display = 'none'; // Close the clicked one if it's already open
+    } else {
+        content.style.display = 'block'; // Open the clicked one
+    }
+}
+
+// Function to toggle symptoms visibility when clicked
+function toggleSymptoms(event, symptomsId) {
+    event.stopPropagation(); // Prevent the parent disease tab from closing when clicking symptoms
+    var symptoms = document.getElementById(symptomsId);
+    symptoms.style.display = symptoms.style.display === 'block' ? 'none' : 'block';
+}
+
+
+
+            </script>
+        
+
+
+<footer>
+    <p>&copy; 2024 Mental Health Awareness. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

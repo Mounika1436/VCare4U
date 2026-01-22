@@ -1,0 +1,20 @@
+.button-container {
+    display: flex; /* Use flexbox to arrange buttons horizontally */
+    justify-content: space-around; /* Space out buttons evenly */
+    margin: 20px 0; /* Margin around the button container */
+}
+
+.disorder-button {
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for buttons */
+    font-size: 1em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s; /* Transition effect */
+}
+
+.disorder-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
